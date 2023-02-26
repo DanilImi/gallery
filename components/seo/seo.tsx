@@ -8,7 +8,7 @@ type Props = {
 }
 
 export const SEO = ({ title, pageDescription, pageUrl, keywords }: Props) => {
-	const seoUrl = `https://gallery.com${pageUrl}`
+	const seoUrl = `https://${pageUrl}`
 
 	return (
 		<Head>

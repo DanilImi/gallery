@@ -1,0 +1,111 @@
+.sticky {
+	max-width: 1260px;
+	width: 100%;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 0;
+	z-index: 1;
+}
+
+.logo {
+	color: #fff;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 400;
+	font-size: calc(15px + 10 * (100vw / 1440));
+}
+
+.menu {
+	max-width: 368px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.menuContainer {
+	max-width: 368px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	background-color: transparent;
+	color: #fff;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 400;
+	font-size: calc(10px + 10 * (100vw / 1440));
+}
+.btnRabbit {
+	background-color: transparent;
+	display: none;
+}
+
+.btnClose {
+	position: fixed;
+	background-color: transparent;
+	display: none;
+	margin-top: 32px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 1300px) {
+	.sticky {
+		padding: 16px 24px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.btn {
+		font-size: 20px;
+	}
+	.logo {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		width: 7%;
+	}
+	.menuContainer,
+	.active {
+		position: fixed;
+		right: -100%;
+		top: 0;
+		max-width: 768px;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #2f171f;
+		transition: right 0.5s;
+	}
+	.menuContainer {
+		justify-content: space-between;
+	}
+	.active {
+		right: 0%;
+	}
+	.btn {
+		font-family: 'Bungee Hairline', cursive;
+		font-weight: 400;
+		font-size: 25px;
+	}
+	.btn:first-child {
+		margin-top: 250px;
+	}
+	.btn:not(:first-child):not(:last-child) {
+		margin: 97px 0;
+	}
+	.btnRabbit {
+		display: block;
+	}
+	.btnClose {
+		display: block;
+	}
+}
+
+/* @media screen and (max-width: 480px) {
+} */

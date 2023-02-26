@@ -1,0 +1,48 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+}
+.preview {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.alineCold {
+	position: relative;
+	padding: 20% 20% 34.9% 20%;
+	max-width: 443px;
+}
+.alineFont {
+	max-width: 620px;
+	width: 100%;
+}
+
+.alineFontText {
+	max-width: 537px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #000000;
+	line-height: 200%;
+	margin-bottom: 30px;
+}
+.alineFontImg {
+	position: relative;
+	padding: 20% 20% 68.39% 20%;
+	max-width: 620px;
+}
+.detail {
+	position: relative;
+	padding: 25.834%;
+}
+
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		margin: 40px 24px;
+	}
+}

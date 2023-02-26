@@ -1,0 +1,95 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+}
+
+.upBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.downBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.satergoIcon {
+	max-width: 558px;
+	width: 100%;
+}
+
+.description {
+	max-width: 367px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 200%;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+}
+.satergoPreview {
+	position: relative;
+	max-width: 629px;
+	width: 100%;
+	padding: 24% 20% 30.05% 20%;
+}
+
+.icon {
+	position: relative;
+	max-width: 558px;
+	width: 100%;
+	padding: 40.33%;
+}
+.branding {
+	position: relative;
+	max-width: 634px;
+	width: 100%;
+	padding: 16%;
+}
+
+.tShort {
+	position: relative;
+	max-width: 557px;
+	width: 100%;
+	padding: 16%;
+}
+
+@media screen and (max-width: 1186px) {
+	.upBlock {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.satergoIcon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.description {
+		text-align: center;
+		padding: 16px 0;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		padding: 0 24px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.satergoPreview {
+		padding: 24% 20% 50.05% 20%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.satergoPreview {
+		padding: 24% 20% 80.05% 20%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.description {
+		text-align: start;
+	}
+}

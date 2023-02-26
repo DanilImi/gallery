@@ -1,0 +1,52 @@
+.wrapper {
+	background-color: #2f171f;
+	max-height: 880px;
+	height: 880px;
+}
+.wrapperImage {
+	background: url('../../public/images/main.PNG');
+	background-repeat: no-repeat;
+	background-position: 50% 30%;
+	background-size: cover;
+	height: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapperImage > div {
+	max-width: 1151px;
+	font-size: calc(80px + 80 * (100vw / 1440));
+	font-family: 'Cormorant Infant', serif;
+	font-weight: 400;
+	color: #fff;
+}
+@media screen and (max-width: 1300px) {
+	.wrapperImage > div {
+		margin: 0 24px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.wrapper {
+		height: 700px;
+	}
+	.wrapperImage > div {
+		font-size: 80px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.wrapperImage > div {
+		font-size: 160px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+		height: 842px;
+	}
+	.wrapperImage {
+		background-position: 27% 28%;
+		background-size: 315% 132%;
+	}
+}

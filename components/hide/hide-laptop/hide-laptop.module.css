@@ -1,0 +1,52 @@
+.description {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+.wrapperHideLaptop {
+	margin: 40px 0;
+}
+.desc1 {
+	max-width: 399px;
+	margin-bottom: 61px;
+	font-size: 15px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	color: #2d2d2d;
+	line-height: 150%;
+}
+
+.desc2 {
+	max-width: 423px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	font-size: 15px;
+	color: #2d2d2d;
+	line-height: 235.5%;
+}
+.wrapperImg {
+	position: relative;
+	padding: 18.1% 0 18.1% 61.5%;
+}
+
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		padding: 16px 24px;
+	}
+}
+
+@media screen and (max-width: 1165px) {
+	.description {
+		justify-content: center;
+	}
+	.wrapperImg {
+		margin-bottom: 20px;
+	}
+	.desc1 {
+		margin-bottom: 20px;
+	}
+}
