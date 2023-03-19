@@ -57,3 +57,9 @@
 		margin-bottom: 20px;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.wrapperHideLaptop {
+		margin: 6px 0;
+	}
+}

@@ -35,27 +35,27 @@
 	position: relative;
 	max-width: 629px;
 	width: 100%;
-	padding: 24% 20% 30.05% 20%;
+	padding: 24% 34% 30.05% 20%;
 }
 
 .icon {
 	position: relative;
-	max-width: 558px;
+	max-width: 540px;
 	width: 100%;
-	padding: 40.33%;
+	padding: 48%;
 }
 .branding {
 	position: relative;
-	max-width: 634px;
+	max-width: 500px;
 	width: 100%;
-	padding: 16%;
+	padding: 20% 0% 20% 20%;
 }
 
 .tShort {
 	position: relative;
-	max-width: 557px;
+	max-width: 500px;
 	width: 100%;
-	padding: 16%;
+	padding: 20% 0% 20% 20%;
 }
 
 @media screen and (max-width: 1186px) {
