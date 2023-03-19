@@ -5,9 +5,8 @@
 	margin: 40px 24px;
 }
 .previewGroup {
-	max-width: 1012px;
+	max-width: 1114px;
 	width: 100%;
-	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -22,9 +21,11 @@
 
 .preview {
 	position: relative;
-	max-width: 448px;
-	max-height: 532px;
-	padding: 17% 17% 25.224% 18%;
+	max-width: 680px;
+	max-height: 680px;
+	width: 100%;
+	padding: 17% 17% 44.05% 44%;
+	height: 100%;
 }
 .description {
 	font-family: 'Inter', sans-serif;
@@ -39,7 +40,8 @@
 .before,
 .after {
 	position: relative;
-	max-width: 651px;
-	max-height: 299px;
-	padding: 17% 17% 6.732% 31.494%;
+	max-width: 500px;
+	width: 100%;
+	max-height: 500px;
+	padding: 17% 17% 24.26% 24.3%;
 }

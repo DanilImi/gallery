@@ -7,13 +7,14 @@ import { useEffect, useState } from "react"
 import { SliderMini } from "@/components/slider-mini"
 
 export const HideAline = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const data = [alineCold, alineFont, detail]
   const description = (<div className={styles.alineFontText}>
     Inspired by the sun, sea and shells, this design was created as the personification of the author. Elegance, saturation through the prism of minimalism, that's how we saw this project.
   </div>)
-  const dataSizeWidth:number[] = [243, 380, 380, 380]
-  const dataSizeHeight:number[] = [380, 226, 226, 226]
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeWidth:number[] = [windowWidth <= 388 ? 192 : 243, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
+  const dataSizeHeight:number[] = [windowWidth <= 388 ? 300 : 380, 226, 226]
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
