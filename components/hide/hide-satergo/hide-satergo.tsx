@@ -1,7 +1,7 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react"
 import styles from "./hide-satergo.module.css"
-import satergoPreview from "../../../public/images/satergoPreview.png"
+import satergoPreview from "../../../public/images/check.png"
 import satergoIcon from "../../../public/images/satergoIcon.svg"
 import tShort from "../../../public/images/tSort.svg"
 import branding from "../../../public/images/branding.png"
@@ -12,7 +12,7 @@ export const HideSatergo:FC = () => {
   const data = [satergoPreview, satergoIcon, branding, tShort]
   const description = (<div className={styles.description}>When creating the Satergo logo, the main goal was to adhere to the image of the planet Saturn</div>)
   const dataSizeWidth:number[] = [353, 353, 380, 380]
-  const dataSizeHeight:number[] = [316, 316, 226, 226]
+  const dataSizeHeight:number[] = [326, 316, 226, 226]
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleWindowResize = () => {

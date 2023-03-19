@@ -1,0 +1,45 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 40px 24px;
+}
+.previewGroup {
+	max-width: 1012px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.beforeAfter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.preview {
+	position: relative;
+	max-width: 448px;
+	max-height: 532px;
+	padding: 17% 17% 25.224% 18%;
+}
+.description {
+	font-family: 'Inter', sans-serif;
+	max-width: 395px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 200%;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.before,
+.after {
+	position: relative;
+	max-width: 651px;
+	max-height: 299px;
+	padding: 17% 17% 6.732% 31.494%;
+}

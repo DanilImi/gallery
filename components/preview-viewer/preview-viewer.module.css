@@ -28,9 +28,9 @@
 	}
 }
 @media screen and (max-width: 768px) {
-	.wrapper {
+	/* .wrapper {
 		height: 700px;
-	}
+	} */
 	.wrapperImage > div {
 		font-size: 80px;
 	}
@@ -42,9 +42,9 @@
 }
 
 @media screen and (max-width: 480px) {
-	.wrapper {
+	/* .wrapper {
 		height: 842px;
-	}
+	} */
 	.wrapperImage {
 		background-position: 27% 28%;
 		background-size: 315% 132%;

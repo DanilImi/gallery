@@ -1,0 +1,43 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 24px;
+}
+.previewGroup {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.previewImg {
+	max-width: 630px;
+	max-height: 630px;
+	position: relative;
+	padding: 25.486%;
+}
+
+.icon {
+	position: relative;
+	max-width: 378px;
+	max-height: 378px;
+	padding: 15.292%;
+}
+.description1 {
+	margin-bottom: 28px;
+}
+.description1,
+.description2 {
+	max-width: 448px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 200%;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #000000;
+}

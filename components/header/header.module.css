@@ -11,11 +11,20 @@
 	z-index: 1;
 }
 
-.logo {
-	color: #fff;
+.logo,
+.logoBlack {
 	font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(15px + 10 * (100vw / 1440));
+}
+.logo {
+	color: #fff;
+}
+.logoBlack {
+	letter-spacing: 0.2px;
+	font-weight: 1000;
+	line-height: 200%;
+	color: #000000;
 }
 
 .menu {
@@ -30,12 +39,21 @@
 	display: flex;
 	justify-content: space-between;
 }
-.btn {
+.btn,
+.btnBlack {
 	background-color: transparent;
-	color: #fff;
 	font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(10px + 10 * (100vw / 1440));
+}
+.btn {
+	color: #fff;
+}
+.btnBlack {
+	color: #000;
+	letter-spacing: 0.2px;
+	line-height: 200%;
+	font-weight: 1000;
 }
 .btnRabbit {
 	background-color: transparent;
@@ -93,11 +111,34 @@
 		font-weight: 400;
 		font-size: 25px;
 	}
+	.btnBack {
+		font-family: 'Bungee Hairline', cursive;
+		font-weight: 1000;
+		font-size: 25px;
+		color: #fff;
+	}
 	.btn:first-child {
 		margin-top: 250px;
 	}
+	.btnBlack:first-child {
+		margin-top: 250px;
+		font-family: 'Bungee Hairline', cursive;
+		font-size: 25px;
+		color: #fff;
+	}
+	.btnBlack:last-child {
+		font-family: 'Bungee Hairline', cursive;
+		font-size: 25px;
+		color: #fff;
+	}
 	.btn:not(:first-child):not(:last-child) {
 		margin: 97px 0;
+	}
+	.btnBlack:not(:first-child):not(:last-child) {
+		margin: 97px 0;
+		font-family: 'Bungee Hairline', cursive;
+		font-size: 25px;
+		color: #fff;
 	}
 	.btnRabbit {
 		display: block;
