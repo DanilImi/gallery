@@ -1,0 +1,18 @@
+.laptop {
+	position: relative;
+	max-height: 751px;
+	width: 100%;
+	height: 100%;
+	padding: 30%;
+	margin: 66px 0 24px;
+}
+
+.laptop > img {
+	left: 2%;
+}
+
+@media screen and (max-width: 480px) {
+	.laptop {
+		margin: 62px 0 0;
+	}
+}

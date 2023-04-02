@@ -1,0 +1,12 @@
+.samurai {
+	position: relative;
+	padding: 36.905%;
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+	.samurai {
+		padding: 49.905%;
+	}
+}

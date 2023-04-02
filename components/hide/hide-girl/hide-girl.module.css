@@ -1,0 +1,45 @@
+.description {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+.wrapperHideLaptop {
+	margin: 40px 0;
+}
+.desc1 {
+	margin: 0 auto;
+	max-width: 435px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 200%;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.wrapperImg {
+	position: relative;
+	max-width: 650px;
+	max-height: 670px;
+	padding: 18.1% 0 35.076% 51.588%;
+}
+
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		padding: 16px 24px;
+	}
+}
+
+@media screen and (max-width: 1165px) {
+	.description {
+		justify-content: center;
+	}
+	.wrapperImg {
+		margin-bottom: 20px;
+	}
+	.desc1 {
+		margin-bottom: 20px;
+	}
+}

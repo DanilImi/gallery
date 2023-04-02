@@ -1,0 +1,86 @@
+.raccoon {
+	margin-bottom: 40px;
+}
+.wrapperFooterMore {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.wrapperFooterHide {
+	display: flex;
+	justify-content: right;
+}
+
+.btnMore > button,
+.btnHide > button {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #000;
+}
+.btnMore > button {
+	background-image: url('../../public/images/down.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	width: 65px;
+	height: 16px;
+}
+.btnHide > button {
+	background-image: url('../../public/images/up.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	width: 65px;
+	height: 16px;
+}
+.moreBtn {
+	margin-left: 21px;
+}
+.hideBtn {
+	margin-left: 16.5px;
+}
+.keyword {
+	font-size: 10px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+.nameBrand {
+	font-size: calc(20px + 10 * (100vw / 1440));
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #2d2d2d;
+	margin-bottom: 23px;
+}
+
+.description {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: #2d2d2d;
+	//font-size: 14px;
+	font-size: calc(8px + 6 * (100vw / 1440));
+}
+
+@media screen and (max-width: 1300px) {
+	.wrapper {
+		padding: 16px 24px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.keyword {
+		margin-bottom: 10px;
+	}
+	.nameBrand {
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,24 @@
+.future {
+	position: relative;
+	height: 807px;
+}
+.futureFon {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1440px;
+	max-height: 807px;
+	padding: 28.356%;
+}
+
+.futureText {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	z-index: 1;
+	max-width: 1256px;
+	font-family: 'Cormorant Infant', serif;
+	font-weight: 400;
+	font-size: calc(65px + 95 * (100vw / 1440));
+	line-height: 84.1%;
+	color: #ffffff;
+}
