@@ -10,7 +10,7 @@ export const HideAline = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const data = [alineCold, alineFont, detail]
   const description = (<div className={styles.alineFontText}>
-    Inspired by the sun, sea and shells, this design was created as the personification of the author. Elegance, saturation through the prism of minimalism, that's how we saw this project.
+    Inspired by the sun, sea and shells, this design was created as the personification of the author. Elegance, saturation through the prism of minimalism, that&apos;s how we saw this project.
   </div>)
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
   const dataSizeWidth:number[] = [windowWidth <= 388 ? 192 : 243, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
@@ -42,7 +42,7 @@ export const HideAline = () => {
           </div>
           <div className={styles.alineFont}>
             <div className={styles.alineFontText}>
-              Inspired by the sun, sea and shells, this design was created as the personification of the author. Elegance, saturation through the prism of minimalism, that's how we saw this project.
+              Inspired by the sun, sea and shells, this design was created as the personification of the author. Elegance, saturation through the prism of minimalism, that&apos;s how we saw this project.
             </div>
             <div className={styles.alineFontImg}>
               <ExportedImage fill src={alineFont} alt="alineFontImg" />

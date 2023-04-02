@@ -18,7 +18,7 @@ export const HideSamurai:FC = () => {
   const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
   const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
   const description = (
-    <div className={styles.description}>"Almost Samurai" is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
+    <div className={styles.description}>&quot;Almost Samurai&quot; is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
   )
   useEffect(() => {
     const handleWindowResize = () => {
@@ -49,7 +49,7 @@ export const HideSamurai:FC = () => {
           ))}
         </div> 
         <div className={styles.previewGroup}>
-          <div className={styles.description}>"Almost Samurai" is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
+          <div className={styles.description}>&quot;Almost Samurai&quot; is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
           <div className={styles.preview}>
             <ExportedImage fill src={samurai5} alt="icon" />
           </div>
