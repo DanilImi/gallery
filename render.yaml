@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nextjs-static
+    env: static
+    buildCommand: next build && next export && next-image-export-optimizer
+    staticPublishPath: out
+    envVars:
+      - key: NODE_ENV
+        value: production
