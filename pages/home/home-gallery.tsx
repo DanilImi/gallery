@@ -12,6 +12,8 @@ import { Gooseart } from "@/components/gooseart"
 import { Kbs } from "@/components/kbs"
 import { Girl } from "@/components/girl"
 import { Future } from "@/components/future"
+import { GraphicDesign } from "@/components/graphic-design"
+import { Footer } from "@/components/footer"
 
 
 const HomeGallery: NextPage = () => {
@@ -34,6 +36,8 @@ const HomeGallery: NextPage = () => {
       <Gooseart />
       <Kbs />
       <Girl />
+      <GraphicDesign />
+      <Footer />
       {/* <Future /> */}
     </>
   )

@@ -13,13 +13,15 @@ import { StaticImageData } from "next/image";
 
 
 export const HideGirl:FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const description = (
     <div className={styles.desc1}>Lovely and delicate illustrations that we created for merchandise that reminds dark-skinned girls how beautiful they are.</div>
   )
   const data:StaticImageData[] = [girlPreview, girl1, girl2, girl3, girl4, girl5]
-  const dataSizeWidth:number[] = [380, 380, 380, 380, 380, 380]
-  const dataSizeHeight:number[] = [451, 451, 451, 451, 451, 451]
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeHeightCalc = windowWidth <= 388 ? 356 : 451
+  const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
+  const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);

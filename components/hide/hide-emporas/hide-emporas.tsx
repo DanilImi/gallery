@@ -10,6 +10,7 @@ import { SliderMini } from "components/slider-mini"
 
 
 export const HideEmporas:FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const data: StaticImageData[] = [emporas1, emporas2, emporas3]
   const dataForSlider: StaticImageData[] = [hideEmporas, emporas1, emporas2, emporas3]
   const description = (
@@ -18,9 +19,10 @@ export const HideEmporas:FC = () => {
       <div className={styles.description1}>In Emporas branding, we created a style that is very different from the usual design of the crypto industry. No “falling number binary effects”, cyber sculptures or neural networks, just real design.</div>
     </div>
   )
-  const dataSizeWidth:number[] = [380, 380, 380, 380]
-  const dataSizeHeight:number[] = [380, 380, 380, 380]
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
+  const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);

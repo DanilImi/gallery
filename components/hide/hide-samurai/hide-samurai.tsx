@@ -10,14 +10,16 @@ import { FC, useEffect, useState } from "react"
 import { SliderMini } from "components/slider-mini"
 
 export const HideSamurai:FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const data: StaticImageData[] = [samurai1, samurai2, samurai3, samurai4]
   const dataForSlider: StaticImageData[] = [samurai1, samurai2, samurai3, samurai4, samurai5]
-  const dataSizeWidth:number[] = [380, 380, 380, 380, 380]
-  const dataSizeHeight:number[] = [380, 380, 380, 380, 380]
+  const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 380
+  const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
+  const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
   const description = (
     <div className={styles.description}>"Almost Samurai" is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
   )
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
