@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
-import satergo from "../../public/images/satergo.png"
+import satergo from "../../public/images2/satergo.webp"
 import styles from "./satergo.module.css"
 import { HideSatergo } from "../hide"
 

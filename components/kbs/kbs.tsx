@@ -2,7 +2,7 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { Layout } from "../layout"
 import styles from "./kbs.module.css"
-import kbs from "../../public/images/kbs.png"
+import kbs from "../../public/images2/kbs.webp"
 import { HideKbs } from "../hide"
 
 

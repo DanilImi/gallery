@@ -1,7 +1,7 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
 import styles from "./ergonodes.module.css"
-import ergonodes from "../../public/images/ergonodes.png"
+import ergonodes from "../../public/images2/ergonodes.webp"
 import { HideErgonodes } from "../hide"
 
 export const Ergonodes = () => {

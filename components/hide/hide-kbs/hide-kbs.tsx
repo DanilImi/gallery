@@ -1,9 +1,9 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react"
 import styles from "./hide-kbs.module.css"
-import kbs3 from "../../../public/images/kbs3.svg"
-import kbs1 from "../../../public/images/kbs1.svg"
-import kbs2 from "../../../public/images/kbs2.svg"
+import kbs3 from "../../../public/images2/kbs3.webp"
+import kbs1 from "../../../public/images2/kbs1.webp"
+import kbs2 from "../../../public/images2/kbs2.webp"
 import { SliderMini } from "@/components/slider-mini"
 
 

@@ -3,11 +3,11 @@ import { SliderMini } from "components/slider-mini";
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react";
 import styles from "./hide-gooseart.module.css"
-import slGooseart1 from "../../../public/images/gooseart1.svg"
-import slGooseart2 from "../../../public/images/gooseart2.svg"
-import slGooseart3 from "../../../public/images/gooseart3.svg"
-import slGooseart4 from "../../../public/images/gooseart4.svg"
-import slGooseart5 from "../../../public/images/gooseart5.png"
+import slGooseart1 from "../../../public/images2/gooseart1.webp"
+import slGooseart2 from "../../../public/images2/gooseart2.webp"
+import slGooseart3 from "../../../public/images2/gooseart3.webp"
+import slGooseart4 from "../../../public/images2/gooseart4.webp"
+import slGooseart5 from "../../../public/images2/gooseart5.webp"
 import { StaticImageData } from "next/image";
 
 

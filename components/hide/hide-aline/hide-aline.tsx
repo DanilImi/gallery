@@ -1,8 +1,8 @@
 import ExportedImage from "next-image-export-optimizer"
 import styles from "./hide-aline.module.css"
-import alineCold from "../../../public/images/alineCold.png"
-import alineFont from "../../../public/images/alineFont.png"
-import detail from "../../../public/images/alineGroup.png"
+import alineCold from "../../../public/images2/alineCold.webp"
+import alineFont from "../../../public/images2/alineFont.webp"
+import detail from "../../../public/images2/alineGroup.webp"
 import { useEffect, useState } from "react"
 import { SliderMini } from "@/components/slider-mini"
 

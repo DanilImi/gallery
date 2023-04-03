@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
-import aline from "../../public/images/aline.png"
+import aline from "../../public/images2/aline.webp"
 import styles from "./aline.module.css"
 import { FC } from "react"
 import { HideAline } from "../hide"

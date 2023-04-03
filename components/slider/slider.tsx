@@ -1,11 +1,15 @@
 import ExportedImage from "next-image-export-optimizer"
 import Slider from "react-slick"
 import styles from "./slider.module.css"
-import slide1 from "../../public/images/slide1.svg"
-import slide2 from "../../public/images/slide2.svg"
-import slide3 from "../../public/images/slide3.svg"
-import slide4 from "../../public/images/slide4.svg"
-import slide5 from "../../public/images/slide5.svg"
+import slide1 from "../../public/images2/1281.webp"
+import slide2 from "../../public/images2/1282.webp"
+import slide3 from "../../public/images2/1283.webp"
+import slide4 from "../../public/images2/1284.webp"
+import slide5 from "../../public/images2/1285.webp"
+import slide6 from "../../public/images2/1286.webp"
+import slide7 from "../../public/images2/1287.webp"
+import slide8 from "../../public/images2/1288.webp"
+import slide9 from "../../public/images2/1289.webp"
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react"
 import { StaticImageData } from "next/image"
 
@@ -22,7 +26,7 @@ export const SliderContainer:FC<{ setChangeImg: Dispatch<SetStateAction<StaticIm
       window.removeEventListener('resize', handleWindowResize);
     };
   });
-  const data = [slide1, slide2, slide3, slide4, slide5]
+  const data = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9]
   const settings = {
     autoplay: true,
     Infinity: true,
