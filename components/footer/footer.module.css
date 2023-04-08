@@ -57,6 +57,7 @@
 	letter-spacing: 0.2px;
 	text-transform: lowercase;
 	color: #000000;
+	cursor: pointer;
 }
 .socialInstagram > p {
 	font-family: 'Cormorant Infant', serif;

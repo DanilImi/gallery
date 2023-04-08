@@ -14,9 +14,22 @@ import { Girl } from "@/components/girl"
 import { Future } from "@/components/future"
 import { GraphicDesign } from "@/components/graphic-design"
 import { Footer } from "@/components/footer"
+import { useRef } from "react"
 
 
 const HomeGallery: NextPage = () => {
+  const myRefGirl = useRef<any>(null)
+  const myRefGraphic = useRef<any>(null)
+  const myRefContact = useRef<any>(null)
+  const handleClickGirl = () => {
+    myRefGirl.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+  }
+  const handleClickGraphic = () => {
+    myRefGraphic.current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'end' })
+  }
+  const handleClickContact = () => {
+    myRefContact.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+  }
   return (
     <>
       <SEO
@@ -25,7 +38,11 @@ const HomeGallery: NextPage = () => {
 				pageUrl={"codependencyonart.com/"}
 				keywords={"Home, A”flat, affflat, renting apartment"}
 			/>
-      <Header />
+      <Header 
+        handleClickGirl={handleClickGirl}
+        handleClickGraphic={handleClickGraphic}
+        handleClickContact={handleClickContact}
+      />
       <PreviewViewer />
       <Laptop />
       <Satergo />
@@ -35,9 +52,9 @@ const HomeGallery: NextPage = () => {
       <Emporas />
       <Gooseart />
       <Kbs />
-      <Girl />
-      <GraphicDesign />
-      <Footer />
+      <div ref={myRefGirl}><Girl /></div>
+      <div ref={myRefGraphic}><GraphicDesign /></div>
+      <div ref={myRefContact}><Footer /></div>
       {/* <Future /> */}
     </>
   )

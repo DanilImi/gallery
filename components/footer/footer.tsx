@@ -4,9 +4,23 @@ import styles from "./footer.module.css"
 import email from "../../public/images/email.svg"
 import instagram from "../../public/images/instagram.svg"
 import facebook from "../../public/images/f.png"
+import Link from "next/link"
 
 
 export const Footer:FC = () => {
+  const copyToClipboard = (text:string) => {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log('Text copied to clipboard');
+      })
+      .catch((error) => {
+        console.error('Error suggesting text to clipboard:', error);
+      });
+  }
+  const handleClick = (event:any) => {
+    const text = event.target.innerText;
+    copyToClipboard(text);
+  }
   return (
     <div className={styles.footer}>
       <div className={styles.footerInner}>
@@ -16,23 +30,23 @@ export const Footer:FC = () => {
             <div className={styles.emailImg}>
               <ExportedImage width={30} height={19} src={email} alt="email" />
             </div>
-            <p>codependencyonart@gmail.com</p>
+            <p onClick={handleClick}>codependencyonart@gmail.com</p>
           </div>
         </div>
         <div className={styles.social}>
           <div className={styles.socialInner}>
-            <div className={styles.socialInstagram}>
+            <Link href="https://instagram.com/codependency.on.art?igshid=YmMyMTA2M2Y=" target="_blank" className={styles.socialInstagram}>
               <div className={styles.instagramImg}>
                 <ExportedImage width={30.99} height={32} src={instagram} alt="instagram" />
               </div>
               <p>instagram</p>
-            </div>
-            <div className={styles.socialFacebook}>
+            </Link>
+            <Link href="https://www.facebook.com/codependency.on.art?mibextid=LQQJ4d" target="_blank" className={styles.socialFacebook}>
               <div className={styles.facebookImg}>
                 <ExportedImage width={12} height={30} src={facebook} alt="facebook" />
               </div>
               <p>facebook</p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

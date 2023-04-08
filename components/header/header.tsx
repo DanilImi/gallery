@@ -1,9 +1,15 @@
 
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "./header.module.css"
 import { MenuHeader } from "./menu-header"
 
-export const Header = () => {
+interface scrollHeader {
+  handleClickGirl: () => void,
+  handleClickGraphic: () => void,
+  handleClickContact: () => void,
+}
+
+export const Header:FC<scrollHeader> = ({handleClickGirl, handleClickContact, handleClickGraphic}) => {
   const [scroll, setScroll] = useState(0);
 
   const handleScroll = () => {
@@ -16,7 +22,11 @@ export const Header = () => {
   return (
     <header className={styles.sticky}>
       <div className={scroll > 870 ? styles.logoBlack : styles.logo}>Codependencyonart</div>
-      <MenuHeader />
+      <MenuHeader 
+        handleClickGirl={handleClickGirl} 
+        handleClickGraphic={handleClickGraphic}
+        handleClickContact={handleClickContact}
+      />
     </header>
   )
 }
