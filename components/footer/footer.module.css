@@ -89,6 +89,7 @@
 	line-height: 200%;
 	letter-spacing: 0.2px;
 	color: #000000;
+	cursor: pointer;
 }
 
 .descriptionWithEmail {

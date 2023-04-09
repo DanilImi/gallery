@@ -2,7 +2,7 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { HideLaptop } from "components/hide"
 import { Layout } from "../layout"
-import laptop from "../../public/images2/9.webp"
+import laptop from "../../public/images2/laptop.webp"
 import styles from "./laptop.module.css"
 
 

@@ -21,6 +21,9 @@ export const Footer:FC = () => {
     const text = event.target.innerText;
     copyToClipboard(text);
   }
+  const handleScroll = () => {
+    window.scrollTo({top: 0, behavior: "smooth" });
+  };
   return (
     <div className={styles.footer}>
       <div className={styles.footerInner}>
@@ -50,7 +53,7 @@ export const Footer:FC = () => {
           </div>
         </div>
       </div>
-      <div className={styles.headerFooter}>Codependencyonart</div>
+      <div onClick={handleScroll} className={styles.headerFooter}>Codependencyonart</div>
     </div>
   )
 }

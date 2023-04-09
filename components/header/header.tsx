@@ -15,13 +15,16 @@ export const Header:FC<scrollHeader> = ({handleClickGirl, handleClickContact, ha
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
+  const handleScrollTop = () => {
+    window.scrollTo({top: 0, behavior: "smooth" });
+  }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <header className={styles.sticky}>
-      <div className={scroll > 870 ? styles.logoBlack : styles.logo}>Codependencyonart</div>
+      <div onClick={handleScrollTop} className={scroll > 870 ? styles.logoBlack : styles.logo}>Codependencyonart</div>
       <MenuHeader 
         handleClickGirl={handleClickGirl} 
         handleClickGraphic={handleClickGraphic}

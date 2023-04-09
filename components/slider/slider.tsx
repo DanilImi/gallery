@@ -10,6 +10,7 @@ import slide6 from "../../public/images2/1286.webp"
 import slide7 from "../../public/images2/1287.webp"
 import slide8 from "../../public/images2/1288.webp"
 import slide9 from "../../public/images2/1289.webp"
+import slide10 from "../../public/images2/9.webp"
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react"
 import { StaticImageData } from "next/image"
 
@@ -26,7 +27,7 @@ export const SliderContainer:FC<{ setChangeImg: Dispatch<SetStateAction<StaticIm
       window.removeEventListener('resize', handleWindowResize);
     };
   });
-  const data = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9]
+  const data = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10]
   const settings = {
     autoplay: true,
     Infinity: true,

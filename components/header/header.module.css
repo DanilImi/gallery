@@ -16,6 +16,7 @@
 	font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(15px + 10 * (100vw / 1440));
+	cursor: pointer;
 }
 .logo {
 	color: #fff;

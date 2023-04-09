@@ -44,7 +44,7 @@ const HomeGallery: NextPage = () => {
         handleClickContact={handleClickContact}
       />
       <PreviewViewer />
-      <Laptop />
+      <div ref={myRefGirl}><Laptop /></div>
       <Satergo />
       <Ergonodes />
       <Aline />
@@ -52,7 +52,7 @@ const HomeGallery: NextPage = () => {
       <Emporas />
       <Gooseart />
       <Kbs />
-      <div ref={myRefGirl}><Girl /></div>
+      <Girl />
       <div ref={myRefGraphic}><GraphicDesign /></div>
       <div ref={myRefContact}><Footer /></div>
       {/* <Future /> */}
