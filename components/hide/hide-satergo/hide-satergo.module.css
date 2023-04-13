@@ -12,7 +12,7 @@
 }
 .downBlock {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 .satergoIcon {
@@ -30,66 +30,36 @@
 	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 0.2px;
+	margin-bottom: 24px;
 }
 .satergoPreview {
 	position: relative;
 	max-width: 629px;
-	width: 100%;
-	padding: 24% 34% 30.05% 20%;
+	padding: 26.985%;
+	margin-right: 41px;
 }
 
 .icon {
 	position: relative;
 	max-width: 540px;
 	width: 100%;
-	padding: 48%;
+	padding: 50.093%;
 }
 .branding {
 	position: relative;
 	max-width: 500px;
-	width: 100%;
-	padding: 20% 0% 20% 20%;
+	padding: 19.842%;
+	margin-right: 50px;
 }
 
 .tShort {
 	position: relative;
 	max-width: 500px;
-	width: 100%;
-	padding: 20% 0% 20% 20%;
-}
-
-@media screen and (max-width: 1186px) {
-	.upBlock {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.satergoIcon {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.description {
-		text-align: center;
-		padding: 16px 0;
-	}
+	padding: 19.842%;
+	margin-left: 50px;
 }
 @media screen and (max-width: 1300px) {
 	.wrapper {
 		padding: 0 24px;
-	}
-}
-@media screen and (max-width: 1000px) {
-	.satergoPreview {
-		padding: 24% 20% 50.05% 20%;
-	}
-}
-@media screen and (max-width: 768px) {
-	.satergoPreview {
-		padding: 24% 20% 80.05% 20%;
-	}
-}
-@media screen and (max-width: 480px) {
-	.description {
-		text-align: start;
 	}
 }

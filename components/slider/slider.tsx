@@ -34,6 +34,7 @@ export const SliderContainer:FC<{ setChangeImg: Dispatch<SetStateAction<StaticIm
     speed: 500,
     slidesToShow: windowWidth <= 1400 ? (windowWidth <= 1200 ? (windowWidth <= 990 ? 2 : 2.5) : 3) : 3.5,
     slidesToScroll: 1,
+    swipeToSlide: true,
     pauseOnHover: true,
     arrows: false
   }
