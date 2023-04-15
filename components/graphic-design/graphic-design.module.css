@@ -34,13 +34,11 @@
 .rabbitCatImg {
 	position: relative;
 	max-width: 692px;
-	width: 100%;
-	padding: 21%;
+	padding: 17% 33% 20% 20%;
 }
 .rabbitImg {
 	position: relative;
 	max-width: 709px;
-	width: 100%;
 	padding: 21%;
 }
 .designInspire {

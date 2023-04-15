@@ -1,7 +1,17 @@
 .emporas {
-	max-width: 930px;
+	max-width: 1220px;
 	position: relative;
-	padding: 36.905%;
+	padding: 28.572%;
 	margin: 0 auto;
 	margin-bottom: 25px;
+}
+
+.emporas > img {
+	border-radius: 35px;
+}
+
+@media screen and (max-width: 480px) {
+	.emporas > img {
+		border-radius: 15px;
+	}
 }

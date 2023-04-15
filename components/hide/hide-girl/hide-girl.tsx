@@ -20,11 +20,12 @@ import { StaticImageData } from "next/image";
 
 
 export const HideGirl:FC = () => {
+  const [changeImg, setChangeImg] = useState<StaticImageData | string>(girl3);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const description = (
     <div className={styles.desc1}>Lovely and delicate illustrations that we created for merchandise that reminds dark-skinned girls how beautiful they are.</div>
   )
-  const data:StaticImageData[] = [girl1, girl2, girl3, girl4, girl5, girl6, girl7, girl8, girl9, girl10, girl11, girl12, girl13]
+  const data:StaticImageData[] = [girl3, girl13, girl4, girl11, girl5, girl8, girl6, girl12, girl7, girl10, girl1, girl9, girl2]
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
   const dataSizeHeightCalc = windowWidth <= 388 ? 356 : 451
   const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
@@ -45,10 +46,10 @@ export const HideGirl:FC = () => {
       <div className={styles.wrapperHideLaptop}>
         {windowWidth <= 800 ? <SliderMini data={data} width={dataSizeWidth} height={dataSizeHeight} description={description} /> : (
           <>
-            <SliderForGirl />
+            <SliderForGirl setChangeImg={setChangeImg} />
             <div className={`${styles.description} ${styles.wrapper} container`}>
               <div className={styles.wrapperImg}>
-                <ExportedImage fill src={girl1} alt="sliderPreview" />
+                <ExportedImage fill src={changeImg} alt="sliderPreview" />
               </div>
               <div className={styles.desc1}>Lovely and delicate illustrations that we created for merchandise that reminds dark-skinned girls how beautiful they are.</div>
             </div>

@@ -13,17 +13,19 @@
 
 .logo,
 .logoBlack {
-	font-family: 'Bungee Hairline', cursive;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	//font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(15px + 10 * (100vw / 1440));
 	cursor: pointer;
+	text-transform: uppercase;
 }
 .logo {
 	color: #fff;
 }
 .logoBlack {
 	letter-spacing: 0.2px;
-	font-weight: 1000;
+	font-weight: 400;
 	line-height: 200%;
 	color: #000000;
 }
@@ -42,10 +44,12 @@
 }
 .btn,
 .btnBlack {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	background-color: transparent;
-	font-family: 'Bungee Hairline', cursive;
+	//font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(10px + 10 * (100vw / 1440));
+	text-transform: uppercase;
 }
 .btn {
 	color: #fff;
@@ -54,7 +58,7 @@
 	color: #000;
 	letter-spacing: 0.2px;
 	line-height: 200%;
-	font-weight: 1000;
+	font-weight: 400;
 }
 .btnRabbit {
 	background-color: transparent;

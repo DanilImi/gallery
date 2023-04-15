@@ -14,10 +14,10 @@ import girl10 from "../../public/images2/girl10.webp"
 import girl11 from "../../public/images2/girl11.webp"
 import girl12 from "../../public/images2/girl12.webp"
 import girl13 from "../../public/images2/girl13.webp"
-import { useEffect, useState } from "react"
+import { Dispatch, FC, SetStateAction, useEffect, useState } from "react"
 import { StaticImageData } from "next/image"
 
-export const SliderForGirl = () => {
+export const SliderForGirl:FC<{ setChangeImg: Dispatch<SetStateAction<StaticImageData | string>>; }> = ({setChangeImg}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleWindowResize = () => {
@@ -30,7 +30,7 @@ export const SliderForGirl = () => {
       window.removeEventListener('resize', handleWindowResize);
     };
   });
-  const data:StaticImageData[] = [girl1, girl2, girl3, girl4, girl5, girl6, girl7, girl8, girl9, girl10, girl11, girl12, girl13 ]
+  const data:StaticImageData[] = [girl3, girl13, girl4, girl11, girl5, girl8, girl6, girl12, girl7, girl10, girl1, girl9, girl2]
   const settings = {
     autoplay: true,
     Infinity: true,
@@ -45,7 +45,7 @@ export const SliderForGirl = () => {
     <div className={styles.container}>
       <Slider {...settings}>
         {data.map((el:StaticImageData, index) => (
-          <div key={`${index}${el}`}>
+          <div className={styles.slideImg} key={`${index}${el}`} onClick={() => setChangeImg(el)}>
             <ExportedImage width={231} height={277} src={el} alt="slide" />
           </div>
         ))}

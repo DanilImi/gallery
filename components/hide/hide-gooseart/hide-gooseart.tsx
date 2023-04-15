@@ -20,7 +20,7 @@ export const HideGooseart:FC = () => {
       <div className={styles.desc2}>The idea of the application is based on helping to deal with stress, developing creative skills and just passing the leisure time of a modern person, by coloring illustrations and learning to draw.</div>
     </div>
   )
-  const data:StaticImageData[] = [slGooseart4, slGooseart1, slGooseart2, slGooseart3]
+  const data:StaticImageData[] = [slGooseart5, slGooseart4, slGooseart1, slGooseart2, slGooseart3]
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 384
   const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 352
   const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
