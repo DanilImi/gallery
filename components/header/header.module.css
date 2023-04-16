@@ -112,13 +112,13 @@
 		right: 0%;
 	}
 	.btn {
-		font-family: 'Bungee Hairline', cursive;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
 		font-weight: 400;
 		font-size: 25px;
 	}
 	.btnBack {
-		font-family: 'Bungee Hairline', cursive;
-		font-weight: 1000;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
+		font-weight: 400;
 		font-size: 25px;
 		color: #fff;
 	}
@@ -127,12 +127,12 @@
 	}
 	.btnBlack:first-child {
 		margin-top: 250px;
-		font-family: 'Bungee Hairline', cursive;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
 		font-size: 25px;
 		color: #fff;
 	}
 	.btnBlack:last-child {
-		font-family: 'Bungee Hairline', cursive;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
 		font-size: 25px;
 		color: #fff;
 	}
@@ -141,7 +141,7 @@
 	}
 	.btnBlack:not(:first-child):not(:last-child) {
 		margin: 97px 0;
-		font-family: 'Bungee Hairline', cursive;
+		font-family: 'IBM Plex Sans Condensed', sans-serif;
 		font-size: 25px;
 		color: #fff;
 	}

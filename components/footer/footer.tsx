@@ -1,13 +1,25 @@
-import ExportedImage from "next-image-export-optimizer"
-import { FC } from "react"
+import { FC, useEffect, useState } from "react"
 import styles from "./footer.module.css"
-import email from "../../public/images/email.svg"
-import instagram from "../../public/images/instagram.svg"
-import facebook from "../../public/images/f.png"
 import Link from "next/link"
+import {RiFacebookBoxLine} from "react-icons/ri"
+import {CgInstagram} from "react-icons/cg"
+import {MdOutlineEmail} from "react-icons/md"
 
 
 export const Footer:FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const copyToClipboard = (text:string) => {
     navigator.clipboard.writeText(text)
       .then(() => {
@@ -28,26 +40,21 @@ export const Footer:FC = () => {
     <div className={styles.footer}>
       <div className={styles.footerInner}>
         <div className={styles.descriptionWithEmail}>
+          {windowWidth <= 390 && <div className={styles.contactMobile}>Do you want to cooperate with us?</div>}
           <div className={styles.contact}>Contact us to find out how we can help</div>
           <div className={styles.contactEmail}>
-            <div className={styles.emailImg}>
-              <ExportedImage width={30} height={19} src={email} alt="email" />
-            </div>
+            <MdOutlineEmail size={32} className={styles.reactIconEmail} />
             <p onClick={handleClick}>codependencyonart@gmail.com</p>
           </div>
         </div>
         <div className={styles.social}>
           <div className={styles.socialInner}>
             <Link href="https://instagram.com/codependency.on.art?igshid=YmMyMTA2M2Y=" target="_blank" className={styles.socialInstagram}>
-              <div className={styles.instagramImg}>
-                <ExportedImage width={30.99} height={32} src={instagram} alt="instagram" />
-              </div>
+              <CgInstagram size={32} className={styles.reactIconInstagram} />
               <p>instagram</p>
             </Link>
             <Link href="https://www.facebook.com/codependency.on.art?mibextid=LQQJ4d" target="_blank" className={styles.socialFacebook}>
-              <div className={styles.facebookImg}>
-                <ExportedImage width={12} height={30} src={facebook} alt="facebook" />
-              </div>
+              <RiFacebookBoxLine size={32} className={styles.reactIconFacebook} />
               <p>facebook</p>
             </Link>
           </div>

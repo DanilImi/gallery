@@ -25,7 +25,7 @@ const HomeGallery: NextPage = () => {
     myRefGirl.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
   }
   const handleClickGraphic = () => {
-    myRefGraphic.current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'end' })
+    myRefGraphic.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
   }
   const handleClickContact = () => {
     myRefContact.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })

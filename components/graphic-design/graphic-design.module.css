@@ -11,17 +11,18 @@
 }
 .rabbit {
 	display: flex;
-	flex-wrap: wrap-reverse;
+	//flex-wrap: wrap-reverse;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 .rabbitCat > p {
-	max-width: 500px;
+	max-width: 580px;
 	font-family: 'Cormorant Infant', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: calc(30px + 20 * (100vw / 1440));
 	line-height: 108.1%;
+	padding: 0 5px 0 21px;
 }
 .rabbit > p {
 	max-width: 519px;
@@ -30,16 +31,18 @@
 	font-weight: 400;
 	font-size: calc(30px + 20 * (100vw / 1440));
 	line-height: 108.1%;
+	padding: 0 21px 0 21px;
+	text-align: right;
 }
 .rabbitCatImg {
 	position: relative;
 	max-width: 692px;
-	padding: 17% 33% 20% 20%;
+	padding: 17% 33% 26.117% 18.609%;
 }
 .rabbitImg {
 	position: relative;
 	max-width: 709px;
-	padding: 21%;
+	padding: 20% 20% 24.024% 23.447%;
 }
 .designInspire {
 	font-family: 'Cormorant Infant', serif;
@@ -78,5 +81,31 @@
 	}
 	.description {
 		font-size: 80px;
+	}
+}
+@media screen and (max-width: 934px) {
+	.rabbit {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 874px) {
+	.graphicDesign {
+		margin-bottom: 43px;
+	}
+}
+@media screen and (max-width: 390px) {
+	.rabbitCat > p {
+		max-width: 284px;
+		font-size: 30px;
+	}
+	.rabbit > p {
+		font-size: 30px;
+	}
+	.designInspire {
+		font-size: 25px;
+	}
+	.description {
+		font-size: 20px;
 	}
 }
