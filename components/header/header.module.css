@@ -14,7 +14,6 @@
 .logo,
 .logoBlack {
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
-	//font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(15px + 10 * (100vw / 1440));
 	cursor: pointer;
@@ -46,7 +45,6 @@
 .btnBlack {
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	background-color: transparent;
-	//font-family: 'Bungee Hairline', cursive;
 	font-weight: 400;
 	font-size: calc(10px + 10 * (100vw / 1440));
 	text-transform: uppercase;
@@ -152,6 +150,3 @@
 		display: block;
 	}
 }
-
-/* @media screen and (max-width: 480px) {
-} */

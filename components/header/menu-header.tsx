@@ -12,8 +12,8 @@ interface scrollHeader {
 
 export const MenuHeader:FC<scrollHeader> = ({handleClickGirl, handleClickContact, handleClickGraphic}) => {
   const [isActive, setIsActive] = useState(false)
+  const [isActiveRabbit, setIsActiveRabbit] = useState(false)
   const [scroll, setScroll] = useState(0);
-
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
@@ -23,24 +23,33 @@ export const MenuHeader:FC<scrollHeader> = ({handleClickGirl, handleClickContact
   }, []);
   return (
     <nav className={styles.menu}>
-      {isActive  && (
-        <button className={styles.btnClose} onClick={() => setIsActive(!isActive)}><ExportedImage width={20} height={20} src={close} alt="rabbit" placeholder="blur" /></button>
+      {isActive && isActiveRabbit  && (
+        <button className={styles.btnClose} onClick={() => {
+          setIsActive(!isActive)
+          setIsActiveRabbit(false)
+        }}><ExportedImage width={20} height={20} src={close} alt="rabbit" placeholder="blur" /></button>
       )}
-      <div className={isActive ? styles.active : styles.menuContainer}>
+      <div className={isActive && isActiveRabbit ? styles.active : styles.menuContainer}>
         <button onClick={ () => {
           setIsActive(!isActive)
+          setIsActiveRabbit(false)
           handleClickGirl()
           }} className={scroll > 870 ? styles.btnBlack : styles.btn}>work</button>
         <button onClick={() => {
           setIsActive(!isActive)
+          setIsActiveRabbit(false)
           handleClickGraphic()
           }} className={scroll > 870 ? styles.btnBlack : styles.btn}>what we do</button>
         <button onClick={() => {
           setIsActive(!isActive)
+          setIsActiveRabbit(false)
           handleClickContact()
           }} className={scroll > 870 ? styles.btnBlack : styles.btn}>contact</button>
       </div>
-      <button className={styles.btnRabbit} onClick={() => setIsActive(!isActive)}><ExportedImage width={33} height={34.62} src={scroll > 870 ? rabbitBlack : rabbit} alt="rabbit" placeholder="blur" /></button>
+      <button className={styles.btnRabbit} onClick={() => {
+        setIsActiveRabbit(true)
+        setIsActive(true)
+        }}><ExportedImage width={33} height={34.62} src={scroll > 870 ? rabbitBlack : rabbit} alt="rabbit" placeholder="blur" /></button>
     </nav>
   )
 }

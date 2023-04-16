@@ -11,7 +11,8 @@ import { SliderMini } from "components/slider-mini"
 
 export const HideSamurai:FC = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const data: StaticImageData[] = [samurai1, samurai2, samurai3, samurai4]
+  const [isSamurai, setIsSamurai] = useState(samurai5);
+  const data: StaticImageData[] = [samurai1, samurai2, samurai3, samurai4, samurai5]
   const dataForSlider: StaticImageData[] = [samurai1, samurai2, samurai3, samurai4, samurai5]
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
   const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 380
@@ -43,7 +44,7 @@ export const HideSamurai:FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.iconGroup}>
           {data.map((el:StaticImageData, index) => (
-            <div key={`${index}${el}`} className={styles.icon}>
+            <div key={`${index}${el}`} className={styles.icon} onClick={() => setIsSamurai(el)}>
               <ExportedImage height={230} width={230} src={el} alt="icon" />
             </div>
           ))}
@@ -51,7 +52,7 @@ export const HideSamurai:FC = () => {
         <div className={styles.previewGroup}>
           <div className={styles.description}>&quot;Almost Samurai&quot; is a collection of characters that combine traditional Japanese culture, filtered through modern sophistication.</div>
           <div className={styles.preview}>
-            <ExportedImage fill src={samurai5} alt="icon" />
+            <ExportedImage fill src={isSamurai} alt="icon" />
           </div>
         </div>
       </div>
