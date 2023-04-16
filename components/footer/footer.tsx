@@ -7,7 +7,7 @@ import {MdOutlineEmail} from "react-icons/md"
 
 
 export const Footer:FC = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(1);
 
   useEffect(() => {
     function handleResize() {
