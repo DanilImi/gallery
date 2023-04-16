@@ -11,7 +11,6 @@ import { Emporas } from "@/components/emporas"
 import { Gooseart } from "@/components/gooseart"
 import { Kbs } from "@/components/kbs"
 import { Girl } from "@/components/girl"
-import { Future } from "@/components/future"
 import { GraphicDesign } from "@/components/graphic-design"
 import { Footer } from "@/components/footer"
 import { useRef } from "react"
@@ -55,7 +54,6 @@ const HomeGallery: NextPage = () => {
       <Girl />
       <div ref={myRefGraphic}><GraphicDesign /></div>
       <div ref={myRefContact}><Footer /></div>
-      {/* <Future /> */}
     </>
   )
 }
