@@ -14,4 +14,7 @@
 	.emporas > img {
 		border-radius: 15px;
 	}
+	.emporas {
+		margin-bottom: 10px;
+	}
 }

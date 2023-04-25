@@ -28,13 +28,14 @@ export const HideSatergo:FC = () => {
     };
   });
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "6px"}}>
       {windowWidth <= 480 ? 
         (<SliderMini 
           data={data} 
           width={dataSizeWidth} 
           height={dataSizeHeight}
-          description={description} 
+          description={description}
+          widthDots={"satergo-sl"}
         />) : (
         <div className={styles.wrapper}>
           <div className={styles.upBlock}>

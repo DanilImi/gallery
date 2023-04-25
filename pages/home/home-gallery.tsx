@@ -32,8 +32,8 @@ const HomeGallery: NextPage = () => {
   return (
     <>
       <SEO
-				title={"Codependencyonart"}
-				pageDescription={"Create your renters profile, pick all the features and amenities and let rental options come to you. Just like that your new apartment will find you."}
+				title={"CODEPENDENCYONART"}
+				pageDescription={""}
 				pageUrl={"codependencyonart.com/"}
 				keywords={"Home, A”flat, affflat, renting apartment"}
 			/>

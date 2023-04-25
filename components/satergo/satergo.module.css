@@ -4,5 +4,10 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 26.191%;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+}
+@media screen and (max-width: 480px) {
+	.satergo {
+		margin-bottom: 10px;
+	}
 }

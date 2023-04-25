@@ -6,3 +6,8 @@
 	padding: 28.572%;
 	margin-bottom: 25px;
 }
+@media screen and (max-width: 480px) {
+	.gooseart {
+		margin-bottom: 10px;
+	}
+}

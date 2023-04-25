@@ -5,3 +5,9 @@
 	padding: 29.882%;
 	margin-bottom: 25px;
 }
+
+@media screen and (max-width: 480px) {
+	.girl {
+		margin-bottom: 10px;
+	}
+}

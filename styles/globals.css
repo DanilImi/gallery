@@ -95,9 +95,35 @@ h6 {
 }
 .slick-el {
 	margin: 0 auto;
-	max-width: 71px;
 	display: flex !important;
 	justify-content: space-between;
+}
+.girl {
+	max-width: 180px;
+}
+.kbs {
+	max-width: 40px;
+}
+.gooseart-sl {
+	max-width: 70px;
+}
+.emporas-sl {
+	max-width: 60px;
+}
+.samurai-sl {
+	max-width: 70px;
+}
+.aline-sl {
+	max-width: 50px;
+}
+.ergonodes-sl {
+	max-width: 35px;
+}
+.satergo-sl {
+	max-width: 70px;
+}
+.laptop-sl {
+	max-width: 160px;
 }
 .slick-el > li > button {
 	font-size: 0;
@@ -106,11 +132,35 @@ h6 {
 	border-radius: 50%;
 	background-color: #d9d9d9;
 }
-.slick-el > li > button:hover {
+/* .slick-el > li > button:hover {
 	background-color: #6062fe;
+} */
+.girl > li.slick-active > button {
+	background-color: #a1c4ca;
 }
-.slick-el > li.slick-active > button {
-	background-color: #6062fe;
+.kbs > li.slick-active > button {
+	background-color: #000000;
+}
+.gooseart-sl > li.slick-active > button {
+	background-color: #ff9548;
+}
+.emporas-sl > li.slick-active > button {
+	background-color: #000c13;
+}
+.samurai-sl > li.slick-active > button {
+	background-color: #ab5d63;
+}
+.aline-sl > li.slick-active > button {
+	background-color: #ffd9c3;
+}
+.ergonodes-sl > li.slick-active > button {
+	background-color: #131835;
+}
+.satergo-sl > li.slick-active > button {
+	background-color: #4e4e4f;
+}
+.laptop-sl > li.slick-active > button {
+	background-color: #3e40f6;
 }
 /* @media screen and (max-width: 1300px) {
 	.container {

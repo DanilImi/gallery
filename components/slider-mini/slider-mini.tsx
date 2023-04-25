@@ -8,10 +8,11 @@ interface ISliderMini {
   data: string[] | StaticImageData[], 
   description?: ReactNode,
   width: number[],
-  height: number[]
+  height: number[],
+  widthDots: string,
 }
 
-export const SliderMini:FC<ISliderMini> = ({data, description, width, height}) => {
+export const SliderMini:FC<ISliderMini> = ({data, description, width, height, widthDots = ""}) => {
   const settings = {
     dots: true,
     autoplay: true,
@@ -21,7 +22,7 @@ export const SliderMini:FC<ISliderMini> = ({data, description, width, height}) =
     slidesToScroll: 1,
     pauseOnHover: true,
     arrows: false,
-    dotsClass: "slick-el"
+    dotsClass: `slick-el ${widthDots}`,
   }
   return (
     <div className={styles.wrapperSliderMini}>

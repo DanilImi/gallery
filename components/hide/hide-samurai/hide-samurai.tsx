@@ -33,13 +33,14 @@ export const HideSamurai:FC = () => {
     };
   });
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "6px"}}>
       {windowWidth <= 480 ? 
         (<SliderMini 
           data={dataForSlider} 
           width={dataSizeWidth} 
           height={dataSizeHeight}
-          description={description} 
+          description={description}
+          widthDots={"samurai-sl"}
         />) : (
       <div className={styles.wrapper}>
         <div className={styles.iconGroup}>

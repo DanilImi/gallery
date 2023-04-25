@@ -43,8 +43,14 @@ export const HideGirl:FC = () => {
   });
   return (
     <>
-      <div className={styles.wrapperHideLaptop}>
-        {windowWidth <= 800 ? <SliderMini data={data} width={dataSizeWidth} height={dataSizeHeight} description={description} /> : (
+      <div className={styles.wrapperHideLaptop} style={{marginTop: "6px"}}>
+        {windowWidth <= 800 ? <SliderMini 
+          data={data} 
+          width={dataSizeWidth} 
+          height={dataSizeHeight} 
+          description={description} 
+          widthDots={"girl"}
+          /> : (
           <>
             <SliderForGirl setChangeImg={setChangeImg} />
             <div className={`${styles.description} ${styles.wrapper} container`}>

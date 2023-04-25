@@ -8,3 +8,8 @@
 .samurai > img {
 	border-radius: 20px;
 }
+@media screen and (max-width: 480px) {
+	.samurai {
+		margin-bottom: 10px;
+	}
+}

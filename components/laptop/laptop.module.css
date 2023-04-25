@@ -13,6 +13,6 @@
 
 @media screen and (max-width: 480px) {
 	.laptop {
-		margin: 62px 0 0;
+		margin: 62px 0 10px;
 	}
 }
