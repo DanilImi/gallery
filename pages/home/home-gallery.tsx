@@ -33,9 +33,9 @@ const HomeGallery: NextPage = () => {
     <>
       <SEO
 				title={"CODEPENDENCYONART"}
-				pageDescription={""}
+				pageDescription={"We understand both the client and the brand, and we create a golden mean that unites them"}
 				pageUrl={"codependencyonart.com/"}
-				keywords={"Home, A”flat, affflat, renting apartment"}
+				keywords={"design studio, order a logo, order branding, logo design, order an illustration, graphic design order, order brand design, codependencyonart, codependency on art, corporate identity order"}
 			/>
       <Header 
         handleClickGirl={handleClickGirl}
