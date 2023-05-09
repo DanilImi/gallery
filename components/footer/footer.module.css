@@ -1,0 +1,138 @@
+.footerInner {
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 166px;
+}
+.socialInner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contactEmail {
+	display: flex;
+	align-items: center;
+}
+.emailImg {
+	margin-right: 13px;
+}
+.socialInstagram {
+	display: flex;
+	align-items: center;
+	margin-bottom: 21px;
+}
+.socialFacebook {
+	display: flex;
+	align-items: center;
+}
+.instagramImg {
+	margin-right: 20px;
+}
+.facebookImg {
+	margin-right: 20px;
+}
+
+.contact {
+	max-width: 698px;
+	width: 100%;
+	font-family: 'Cormorant Infant', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(25px + 35 * (100vw / 1440));
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	line-height: calc(33px + 40 * (100vw / 1440));
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.contactEmail > p {
+	font-family: 'Cormorant Infant', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(20px + 10 * (100vw / 1440));
+	letter-spacing: 0.2px;
+	text-transform: lowercase;
+	color: #000000;
+}
+.socialInstagram > p {
+	font-family: 'Cormorant Infant', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(20px + 10 * (100vw / 1440));
+	letter-spacing: 0.2px;
+	text-transform: lowercase;
+	color: #000000;
+}
+.socialFacebook > p {
+	font-family: 'Cormorant Infant', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc(20px + 10 * (100vw / 1440));
+	letter-spacing: 0.2px;
+	text-transform: lowercase;
+	color: #000000;
+}
+
+.headerFooter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Bungee Hairline', cursive;
+	font-style: normal;
+	font-weight: 999;
+	font-size: 25px;
+	line-height: 200%;
+	letter-spacing: 0.2px;
+	color: #000000;
+}
+
+.descriptionWithEmail {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+	.contact {
+		font-size: 60px;
+		line-height: 73px;
+	}
+	.contactEmail > p {
+		font-size: 30px;
+	}
+	.socialInstagram > p {
+		font-size: 30px;
+	}
+	.socialFacebook > p {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 874px) {
+	.footer {
+		padding-top: 40px;
+		background-color: #4e4e4e;
+	}
+	.footerInner {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.contact {
+		color: #fff;
+		margin-bottom: 64px;
+	}
+	.descriptionWithEmail {
+		margin-bottom: 62px;
+	}
+	.socialFacebook > p {
+		color: #fff;
+	}
+	.socialInstagram > p {
+		color: #fff;
+	}
+	.contactEmail > p {
+		color: #fff;
+	}
+}
