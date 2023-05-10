@@ -1,7 +1,7 @@
 import ExportedImage from "next-image-export-optimizer"
 import styles from "./hide-ergonodes.module.css"
-import ergonodesIcon from "../../../public/images/ergonodesdesc.png"
-import ergonodesPreview from "../../../public/images/ergonodespreview.png"
+import ergonodesIcon from "../../../public/images2/ergonodesdesc.webp"
+import ergonodesPreview from "../../../public/images2/ergonodespreview.webp"
 import { StaticImageData } from "next/image"
 import { useEffect, useState } from "react"
 import { SliderMini } from "components/slider-mini"
@@ -26,13 +26,14 @@ export const HideErgonodes = () => {
     };
   });
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "6px"}}>
       {windowWidth <= 480 ? 
         (<SliderMini 
           data={data} 
           width={dataSizeWidth} 
           height={dataSizeHeight}
-          description={description} 
+          description={description}
+          widthDots={"ergonodes-sl"}
         />) : (
         <div className={styles.wrapper}>
           <div className={styles.ergonodesDesc}>

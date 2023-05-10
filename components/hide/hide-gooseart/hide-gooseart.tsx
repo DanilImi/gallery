@@ -3,11 +3,11 @@ import { SliderMini } from "components/slider-mini";
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react";
 import styles from "./hide-gooseart.module.css"
-import slGooseart1 from "../../../public/images/gooseart1.svg"
-import slGooseart2 from "../../../public/images/gooseart2.svg"
-import slGooseart3 from "../../../public/images/gooseart3.svg"
-import slGooseart4 from "../../../public/images/gooseart4.svg"
-import slGooseart5 from "../../../public/images/gooseart5.png"
+import slGooseart1 from "../../../public/images2/gooseart1.webp"
+import slGooseart2 from "../../../public/images2/gooseart2.webp"
+import slGooseart3 from "../../../public/images2/gooseart3.webp"
+import slGooseart4 from "../../../public/images2/gooseart4.webp"
+import slGooseart5 from "../../../public/images2/gooseart5.webp"
 import { StaticImageData } from "next/image";
 
 
@@ -20,7 +20,7 @@ export const HideGooseart:FC = () => {
       <div className={styles.desc2}>The idea of the application is based on helping to deal with stress, developing creative skills and just passing the leisure time of a modern person, by coloring illustrations and learning to draw.</div>
     </div>
   )
-  const data:StaticImageData[] = [slGooseart4, slGooseart1, slGooseart2, slGooseart3]
+  const data:StaticImageData[] = [slGooseart5, slGooseart4, slGooseart1, slGooseart2, slGooseart3]
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 384
   const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 352
   const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
@@ -38,8 +38,14 @@ export const HideGooseart:FC = () => {
   });
   return (
     <>
-      <div className={styles.wrapperHideLaptop}>
-        {windowWidth <= 800 ? <SliderMini data={data} width={dataSizeWidth} height={dataSizeHeight} description={description} /> : (
+      <div className={styles.wrapperHideLaptop} style={{marginTop: "6px"}}>
+        {windowWidth <= 800 ? <SliderMini 
+          data={data} 
+          width={dataSizeWidth} 
+          height={dataSizeHeight} 
+          description={description} 
+          widthDots={"gooseart-sl"}
+          /> : (
           <>
             <SliderForGooseart setChangeImg={setChangeImg} />
             <div className={`${styles.description} ${styles.wrapper} container`}>

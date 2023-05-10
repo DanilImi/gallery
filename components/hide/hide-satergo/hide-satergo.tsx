@@ -1,10 +1,10 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react"
 import styles from "./hide-satergo.module.css"
-import satergoPreview from "../../../public/images/check.png"
-import satergoIcon from "../../../public/images/лого 1.svg"
-import tShort from "../../../public/images/лого 3.svg"
-import branding from "../../../public/images/лого 2.svg"
+import satergoPreview from "../../../public/images2/satergoPreview.webp"
+import satergoIcon from "../../../public/images2/лого 1.webp"
+import tShort from "../../../public/images2/лого 3.webp"
+import branding from "../../../public/images2/лого 2.webp"
 import { SliderMini } from "components/slider-mini"
 
 
@@ -28,13 +28,14 @@ export const HideSatergo:FC = () => {
     };
   });
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "6px"}}>
       {windowWidth <= 480 ? 
         (<SliderMini 
           data={data} 
           width={dataSizeWidth} 
           height={dataSizeHeight}
-          description={description} 
+          description={description}
+          widthDots={"satergo-sl"}
         />) : (
         <div className={styles.wrapper}>
           <div className={styles.upBlock}>

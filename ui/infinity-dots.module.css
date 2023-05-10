@@ -1,0 +1,14 @@
+.infinity-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+	margin: 0 5px;
+}
+
+.infinity-dot.active {
+	background-color: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

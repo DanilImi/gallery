@@ -2,7 +2,7 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { Layout } from "../layout"
 import styles from "./gooseart.module.css"
-import gooseart from "../../public/images/gooseart.png"
+import gooseart from "../../public/images2/gooseart.webp"
 import { HideGooseart } from "../hide"
 
 export const Gooseart:FC = () => {

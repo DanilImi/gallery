@@ -10,7 +10,6 @@
 .socialInner {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 .contactEmail {
 	display: flex;
@@ -34,6 +33,18 @@
 .facebookImg {
 	margin-right: 20px;
 }
+.reactIconFacebook {
+	margin-right: 22px;
+	color: #000;
+}
+.reactIconInstagram {
+	margin-right: 22px;
+	color: #000;
+}
+.reactIconEmail {
+	margin-right: 10px;
+	color: #000;
+}
 
 .contact {
 	max-width: 698px;
@@ -48,6 +59,15 @@
 	color: #000000;
 	margin-bottom: 20px;
 }
+.contactMobile {
+	font-family: 'Cormorant Infant', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 130.6%;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+}
 
 .contactEmail > p {
 	font-family: 'Cormorant Infant', serif;
@@ -57,6 +77,7 @@
 	letter-spacing: 0.2px;
 	text-transform: lowercase;
 	color: #000000;
+	cursor: pointer;
 }
 .socialInstagram > p {
 	font-family: 'Cormorant Infant', serif;
@@ -81,13 +102,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Bungee Hairline', cursive;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	font-style: normal;
-	font-weight: 999;
+	font-weight: 400;
 	font-size: 25px;
 	line-height: 200%;
 	letter-spacing: 0.2px;
 	color: #000000;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .descriptionWithEmail {
@@ -110,6 +133,11 @@
 		font-size: 30px;
 	}
 }
+@media screen and (max-width: 1220px) {
+	.footerInner {
+		padding: 0 21px 0 21px;
+	}
+}
 @media screen and (max-width: 874px) {
 	.footer {
 		padding-top: 40px;
@@ -117,7 +145,6 @@
 	}
 	.footerInner {
 		flex-wrap: wrap;
-		justify-content: center;
 	}
 	.contact {
 		color: #fff;
@@ -134,5 +161,35 @@
 	}
 	.contactEmail > p {
 		color: #fff;
+	}
+	.reactIconFacebook {
+		color: #fff;
+	}
+	.reactIconInstagram {
+		color: #fff;
+	}
+	.reactIconEmail {
+		color: #fff;
+	}
+}
+@media screen and (max-width: 390px) {
+	.contactMobile {
+		max-width: 269px;
+	}
+	.contact {
+		max-width: 265px;
+		font-size: 25px;
+		text-transform: lowercase;
+	}
+}
+@media screen and (max-width: 380px) {
+	.contactEmail > p {
+		font-size: 20px;
+	}
+	.footerInner {
+		padding: 0 5px 0 5px;
+	}
+	.reactIconEmail {
+		margin-right: 5px;
 	}
 }

@@ -11,23 +11,39 @@ import { Emporas } from "@/components/emporas"
 import { Gooseart } from "@/components/gooseart"
 import { Kbs } from "@/components/kbs"
 import { Girl } from "@/components/girl"
-import { Future } from "@/components/future"
 import { GraphicDesign } from "@/components/graphic-design"
 import { Footer } from "@/components/footer"
+import { useRef } from "react"
 
 
 const HomeGallery: NextPage = () => {
+  const myRefGirl = useRef<any>(null)
+  const myRefGraphic = useRef<any>(null)
+  const myRefContact = useRef<any>(null)
+  const handleClickGirl = () => {
+    myRefGirl.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+  }
+  const handleClickGraphic = () => {
+    myRefGraphic.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+  }
+  const handleClickContact = () => {
+    myRefContact.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+  }
   return (
     <>
       <SEO
-				title={"Codependencyonart"}
-				pageDescription={"Create your renters profile, pick all the features and amenities and let rental options come to you. Just like that your new apartment will find you."}
+				title={"CODEPENDENCYONART"}
+				pageDescription={"We understand both the client and the brand, and we create a golden mean that unites them"}
 				pageUrl={"codependencyonart.com/"}
-				keywords={"Home, A”flat, affflat, renting apartment"}
+				keywords={"design studio, order a logo, order branding, logo design, order an illustration, graphic design order, order brand design, codependencyonart, codependency on art, corporate identity order"}
 			/>
-      <Header />
+      <Header 
+        handleClickGirl={handleClickGirl}
+        handleClickGraphic={handleClickGraphic}
+        handleClickContact={handleClickContact}
+      />
       <PreviewViewer />
-      <Laptop />
+      <div ref={myRefGirl}><Laptop /></div>
       <Satergo />
       <Ergonodes />
       <Aline />
@@ -36,9 +52,8 @@ const HomeGallery: NextPage = () => {
       <Gooseart />
       <Kbs />
       <Girl />
-      <GraphicDesign />
-      <Footer />
-      {/* <Future /> */}
+      <div ref={myRefGraphic}><GraphicDesign /></div>
+      <div ref={myRefContact}><Footer /></div>
     </>
   )
 }

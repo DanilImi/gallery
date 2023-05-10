@@ -1,12 +1,15 @@
 .samurai {
+	max-width: 1220px;
 	position: relative;
-	padding: 36.905%;
-	max-width: 930px;
+	padding: 28.572%;
 	margin: 0 auto;
+	margin-bottom: 25px;
 }
-
-@media (min-width: 320px) and (max-width: 1000px) {
+.samurai > img {
+	border-radius: 20px;
+}
+@media screen and (max-width: 480px) {
 	.samurai {
-		padding: 49.905%;
+		margin-bottom: 10px;
 	}
 }

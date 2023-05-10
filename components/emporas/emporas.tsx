@@ -1,7 +1,7 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
 import styles from "./emporas.module.css"
-import emporas from "../../public/images/emporas.png"
+import emporas from "../../public/images2/emporas.webp"
 import { HideEmporas } from "../hide"
 
 

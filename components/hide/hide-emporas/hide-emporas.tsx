@@ -1,10 +1,10 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react"
 import styles from "./hide-emporas.module.css"
-import hideEmporas from "../../../public/images/emporasPreview.png"
-import emporas1 from "../../../public/images/emporas1.png"
-import emporas2 from "../../../public/images/emporas2.png"
-import emporas3 from "../../../public/images/emporas3.png"
+import hideEmporas from "../../../public/images2/emporasPreview.webp"
+import emporas1 from "../../../public/images2/emporas1.webp"
+import emporas2 from "../../../public/images2/emporas2.webp"
+import emporas3 from "../../../public/images2/emporas3.webp"
 import { StaticImageData } from "next/image"
 import { SliderMini } from "components/slider-mini"
 
@@ -35,13 +35,14 @@ export const HideEmporas:FC = () => {
     };
   });
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: "6px"}}>
       {windowWidth <= 480 ? 
         (<SliderMini 
           data={dataForSlider} 
           width={dataSizeWidth} 
           height={dataSizeHeight}
-          description={description} 
+          description={description}
+          widthDots={"emporas-sl"}
         />) : (
       <div className={styles.wrapper}>
         <div className={styles.previewGroup}>

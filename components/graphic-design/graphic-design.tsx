@@ -1,8 +1,8 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import styles from "./graphic-design.module.css"
-import rabbit from "../../public/images/rabbit1.svg"
-import rabbitCat from "../../public/images/rabbitCat.svg"
+import rabbit from "../../public/images2/rabbit1.webp"
+import rabbitCat from "../../public/images2/rabbitCat.webp"
 
 export const GraphicDesign:FC = () => {
   return (

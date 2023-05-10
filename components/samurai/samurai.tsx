@@ -1,7 +1,7 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
 import styles from "./samurai.module.css"
-import samurai from "../../public/images/samurai.png"
+import samurai from "../../public/images2/samurai.webp"
 import { HideSamurai } from "../hide"
 
 export const Samurai = () => {
