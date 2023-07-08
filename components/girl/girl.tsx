@@ -2,8 +2,8 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { Layout } from "../layout"
 import styles from "./girl.module.css"
-import girl from "../../public/images2/girl14.webp"
 import { HideGirl } from "../hide"
+import { dataSetImage } from "@/utils/consts"
 
 export const Girl:FC = () => {
   return (
@@ -13,7 +13,7 @@ export const Girl:FC = () => {
       hide={<HideGirl />}
     >
       <div className={styles.girl}>
-        <ExportedImage fill src={girl} alt="girl" />
+        <ExportedImage fill src={dataSetImage.girl} alt="girl" />
       </div>
     </Layout>
   )

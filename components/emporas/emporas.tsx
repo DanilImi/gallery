@@ -1,8 +1,8 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
 import styles from "./emporas.module.css"
-import emporas from "../../public/images2/emporas.webp"
 import { HideEmporas } from "../hide"
+import { dataSetImage } from "@/utils/consts"
 
 
 export const Emporas = () => {
@@ -13,7 +13,7 @@ export const Emporas = () => {
       hide={<HideEmporas />}
     >
       <div className={styles.emporas}>
-        <ExportedImage fill src={emporas} alt="emporas" />
+        <ExportedImage fill src={dataSetImage.emporas} alt="emporas" />
       </div>
     </Layout>
   )

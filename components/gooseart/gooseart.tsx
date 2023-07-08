@@ -2,8 +2,8 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { Layout } from "../layout"
 import styles from "./gooseart.module.css"
-import gooseart from "../../public/images2/gooseart.webp"
 import { HideGooseart } from "../hide"
+import { dataSetImage } from "@/utils/consts"
 
 export const Gooseart:FC = () => {
   return (
@@ -13,7 +13,7 @@ export const Gooseart:FC = () => {
       hide={<HideGooseart />}
     >
       <div className={styles.gooseart}>
-        <ExportedImage fill src={gooseart} alt="gooseart" />
+        <ExportedImage fill src={dataSetImage.gooseart} alt="gooseart" />
       </div>
     </Layout>
   )

@@ -1,9 +1,9 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Layout } from "../layout"
-import aline from "../../public/images2/aline.webp"
 import styles from "./aline.module.css"
 import { FC } from "react"
 import { HideAline } from "../hide"
+import { dataSetImage } from "@/utils/consts"
 
 export const Aline:FC = () => {
   return (
@@ -14,7 +14,7 @@ export const Aline:FC = () => {
       hide={<HideAline />}
     >
       <div className={styles.aline}>
-        <ExportedImage fill src={aline} alt="aline" />
+        <ExportedImage fill src={dataSetImage.aline} alt="aline" />
       </div>
     </Layout>
   )

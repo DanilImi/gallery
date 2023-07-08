@@ -2,8 +2,8 @@ import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import { Layout } from "../layout"
 import styles from "./kbs.module.css"
-import kbs from "../../public/images2/kbs.webp"
 import { HideKbs } from "../hide"
+import { dataSetImage } from "@/utils/consts"
 
 
 export const Kbs:FC = () => {
@@ -14,7 +14,7 @@ export const Kbs:FC = () => {
       hide={<HideKbs />}
     >
       <div className={styles.kbs}>
-        <ExportedImage fill src={kbs} alt="kbs" /> 
+        <ExportedImage fill src={dataSetImage.kbs} alt="kbs" /> 
       </div>
     </Layout>
   )

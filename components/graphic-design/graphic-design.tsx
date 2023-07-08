@@ -1,18 +1,17 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC } from "react"
 import styles from "./graphic-design.module.css"
-import rabbit from "../../public/images2/rabbit1.webp"
-import rabbitCat from "../../public/images2/rabbitCat.webp"
+import { dataSetImage } from "@/utils/consts"
 
 export const GraphicDesign:FC = () => {
   return (
     <div className={styles.graphicDesign}>
       <div className={styles.rabbitCat}>
         <p>We take great responsibility in creating a positive relationship between your brand and its audience</p>
-        <div className={styles.rabbitCatImg}><ExportedImage fill src={rabbitCat} alt="rabbit and cat" /></div>
+        <div className={styles.rabbitCatImg}><ExportedImage fill src={dataSetImage.rabbitCat} alt="rabbit and cat" /></div>
       </div>
       <div className={styles.rabbit}>
-        <div className={styles.rabbitImg}><ExportedImage fill src={rabbit} alt="rabbit" /></div>
+        <div className={styles.rabbitImg}><ExportedImage fill src={dataSetImage.rabbit} alt="rabbit" /></div>
         <p>We understand both the client and the brand, and we create a golden mean that unites them</p>
       </div>
       <div className={styles.designInspire}>We create designs that inspire</div>
