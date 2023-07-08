@@ -3,28 +3,41 @@ import { SliderMini } from "components/slider-mini";
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react";
 import styles from "./hide-gooseart.module.css"
-import slGooseart1 from "../../../public/images2/gooseart1.webp"
-import slGooseart2 from "../../../public/images2/gooseart2.webp"
-import slGooseart3 from "../../../public/images2/gooseart3.webp"
-import slGooseart4 from "../../../public/images2/gooseart4.webp"
-import slGooseart5 from "../../../public/images2/gooseart5.webp"
-import { StaticImageData } from "next/image";
+import { dataSetImage } from "@/utils/consts";
 
 
 export const HideGooseart:FC = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [changeImg, setChangeImg] = useState<StaticImageData | string>(slGooseart5);
+  const [changeImg, setChangeImg] = useState<string>(dataSetImage.slGooseart5);
   const description = (
     <div className={styles.wrapperText}>
       <div className={styles.desc1}>GooseArt is a unique app that combines a coloring book and drawing lessons</div>
       <div className={styles.desc2}>The idea of the application is based on helping to deal with stress, developing creative skills and just passing the leisure time of a modern person, by coloring illustrations and learning to draw.</div>
     </div>
   )
-  const data:StaticImageData[] = [slGooseart5, slGooseart4, slGooseart1, slGooseart2, slGooseart3]
+  const data:string[] = [
+    dataSetImage.slGooseart5, 
+    dataSetImage.slGooseart4, 
+    dataSetImage.slGooseart1, 
+    dataSetImage.slGooseart2, 
+    dataSetImage.slGooseart3
+  ]
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 384
   const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 352
-  const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
-  const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
+  const dataSizeWidth:number[] = [
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc
+  ]
+  const dataSizeHeight:number[] = [
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc
+  ]
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);

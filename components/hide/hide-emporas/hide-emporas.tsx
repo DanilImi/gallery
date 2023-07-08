@@ -1,18 +1,23 @@
 import ExportedImage from "next-image-export-optimizer"
 import { FC, useEffect, useState } from "react"
 import styles from "./hide-emporas.module.css"
-import hideEmporas from "../../../public/images2/emporasPreview.webp"
-import emporas1 from "../../../public/images2/emporas1.webp"
-import emporas2 from "../../../public/images2/emporas2.webp"
-import emporas3 from "../../../public/images2/emporas3.webp"
-import { StaticImageData } from "next/image"
 import { SliderMini } from "components/slider-mini"
+import { dataSetImage } from "@/utils/consts"
 
 
 export const HideEmporas:FC = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const data: StaticImageData[] = [emporas1, emporas2, emporas3]
-  const dataForSlider: StaticImageData[] = [hideEmporas, emporas1, emporas2, emporas3]
+  const data: string[] = [
+    dataSetImage.emporas1,
+    dataSetImage.emporas2,
+    dataSetImage.emporas3
+  ]
+  const dataForSlider: string[] = [
+    dataSetImage.hideEmporas, 
+    dataSetImage.emporas1, 
+    dataSetImage.emporas2, 
+    dataSetImage.emporas3
+  ]
   const description = (
     <div className={styles.descriptionGroup}>
       <div className={styles.description1}>The idea of Emporas is to create unique merch in cooperation with crypto projects. This is the case when Web 3.0 becomes part of the physical world.</div>
@@ -21,8 +26,20 @@ export const HideEmporas:FC = () => {
   )
   const dataSizeWidthCalc = windowWidth <= 388 ? 300 : 380
   const dataSizeHeightCalc = windowWidth <= 388 ? 300 : 380
-  const dataSizeWidth:number[] = [dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc, dataSizeWidthCalc]
-  const dataSizeHeight:number[] = [dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc, dataSizeHeightCalc]
+  const dataSizeWidth:number[] = [
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc, 
+    dataSizeWidthCalc
+  ]
+  const dataSizeHeight:number[] = [
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc, 
+    dataSizeHeightCalc
+  ]
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
@@ -47,7 +64,7 @@ export const HideEmporas:FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.previewGroup}>
           <div className={styles.previewImg}>
-            <ExportedImage fill src={hideEmporas} alt="hideEmporas" />
+            <ExportedImage fill src={dataSetImage.hideEmporas} alt="hideEmporas" />
           </div>
           <div className={styles.descriptionGroup}>
             <div className={styles.description1}>The idea of Emporas is to create unique merch in cooperation with crypto projects. This is the case when Web 3.0 becomes part of the physical world.</div>
@@ -55,7 +72,7 @@ export const HideEmporas:FC = () => {
           </div>
         </div>
         <div className={styles.info}>
-          {data.map((el:StaticImageData, index) => (
+          {data.map((el:string, index) => (
             <div key={`${index}${el}`} className={styles.icon}>
               <ExportedImage fill src={el} alt="info" />
             </div>
